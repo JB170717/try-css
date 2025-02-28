@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .mid{
+            height: 500px;
+            border: 1px solid #777;
+            /* 백그라운드-size */
+            background-image:  url(img/back.jpg);
+            background-repeat: no-repeat;
+            background-size: contain; /* 이미지가 잘리지 않도록하고, 나머지는 백그라운드 반복 */
+            background-size: cover; /* 빈 공간없이 채우고, 이미지를 자름 */
+            
+        }
+
+        .content{
+            height: 500px;
+            background-image: url('img/back.jpg');
+            background-attachment: fixed; /* scroll; 기본값 */
+            background-size: cover;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <section class="mid">
+        ....
+    </section>
+
+    <section class="content">
+        ....
+    </section>
+
+    <section style="height: 1000px;">
+
+    </section>
+
+</body>
+</html>

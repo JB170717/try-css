@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box .inner {
+            display: inline; /* 인라인요소로 변경 */
+        }
+        .abox span,
+        .abox strong,
+        .abox i {
+            display: block; /* 블럭요소로 변경 */
+        }
+
+        .bbox a {
+            border: 1px solid #777;
+            width: 100px; /* 박스크기는 블럭속성만 가질수 있음/ */
+            height: 100px; /* 그래서 인라인같은경우 박스크기 지정불가능*/
+            display: inline-block; /* 가로배치하되, 블럭속성(박스 크기지정가능)을 가지게 함 */
+            text-align: center;
+            line-height: 100px;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .cbox {
+            display: none; /* 안보이게 해놨다가 나중에 보여지게 만듬듬 */
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="box">
+        <div class="inner">블럭</div>
+        <div class="inner">블럭</div>
+        <div class="inner">블럭</div>
+    </div>
+
+    <div class="abox">
+        <span>인라인</span>
+        <strong>인라인</strong>
+        <i>인라인</i>
+    </div>
+
+    <div class="bbox">
+        <a href="#">인라인</a>
+        <a href="#">인라인</a>
+        <a href="#">인라인</a>
+    </div>
+
+    <div class="cbox">
+        아이디를 입력하세요
+    </div>
+
+
+
+</body>
+</html>

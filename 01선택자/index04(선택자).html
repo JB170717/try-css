@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box >li > a:hover {color: red;}
+        .abc:focus{
+            border:3px solid red;
+            outline: none;
+        }
+        .def:active{color: blue;}
+    </style>
+    
+</head>
+<body>
+    
+    <ul class="box">
+        <li><a href="#">목록</a></li>
+        <li><a href="#">목록</a></li>
+        <li><a href="#">목록</a></li>
+    </ul>
+
+    <!-- focus - 인풋태그에 사용함 -->
+    <input type="text" class="abc">
+
+    <p class="def">active는 클릭할떄를 의미합니다</p>
+
+</body>
+</html>
