@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .gnb {
+            background-color: black;
+            text-align: center;
+            /* height: 44px; */
+        }
+
+        .gnb > ul > li {
+            display: inline;
+        }
+
+        .gnb > ul > li > a {
+            display: inline-block;
+            color:white;
+            text-decoration: none;
+            padding : 10px 20px;
+            height : 40px;
+            box-sizing: border-box;
+        }
+
+        .gnb > ul > li > a:hover {
+            border-bottom: 3px solid #fff;
+        }
+
+        .wrap {
+            width: 1080px;
+            margin : 0 auto;
+        }
+
+        .wrap > .box{
+            border: 1px solid #777;
+            padding: 30px;
+        }
+
+        img {
+            max-width : 100%
+            
+        }
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        <nav class="gnb">
+            <ul>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        <img src="img/662c5a44b70babed6532b6d962f637b4.jpg" alt="슬라이드1">
+    </article>
+
+    <section>
+        <div class="wrap">
+            <h3>오늘의 발견</h3>
+            <div class="box">
+                본문 영역....<br>
+                본문 영역....<br>
+                본문 영역....<br>
+                본문 영역....<br>
+                본문 영역....<br>
+                본문 영역....<br>
+                본문 영역....<br>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

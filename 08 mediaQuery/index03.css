@@ -1,0 +1,125 @@
+* {padding: 0; margin: 0;}
+ul, li, ol, dd, dl {list-style: none;}
+a {text-decoration: none;}
+img {max-width: 100%; height: auto;}
+
+/* 브라우저 사이즈 디자인 */
+@media(min-width: 767px) {
+    #box {
+        width: 960px;
+        margin: 0 auto;
+        border: 1px solid #e3e3e3;
+    }
+
+    #box .logo {
+        background-image: url(images/bg.png);
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #box .logo h3 {
+        color: yellow;
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    #box .gnb {
+        background-color: #c13333;
+    }
+    
+    #box .gnb ul li {
+        display: inline;
+    }
+
+    #box .gnb ul li a {
+        display: inline-block;
+        color: white;
+        padding: 20px;
+        font-weight: 900;
+    }
+
+    #box .gnb ul li a:hover {
+        background-color: #903;
+    }
+
+    /*  */
+    #wrap {
+        overflow: hidden;
+    }
+
+    #wrap .left {
+        float: left;
+        width: 700px;
+        padding: 10px;
+    }
+
+    #wrap .right {
+        float: right;
+        width: 200px;
+        padding: 10px;
+        background-color: #e3e3e3;
+        height: 500px;
+    }
+
+    #footer {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+/* 모바일 디자인 */
+@media(max-width: 766px) {
+    #box {
+        /* width: 100%; */
+        min-width: 350px; /* 최소너비 아하로는 줄지 않는다 350px 이상부터는 가변된다다 */
+    }
+    #box .logo {
+        background-image: url(images/bg.png);
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #box .logo h3 {
+        color: yellow;
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    #box .gnb {
+        background-color: #c13333;
+        text-align: center;
+    }
+
+    #box .gnb ul li a {
+       display: block;
+        color: white;
+        padding: 5px;
+        font-size: 12px;  
+    }
+
+    #box .gnb ul li a:hover {
+        background-color: #903;
+    }
+    
+    #wrap {
+        padding: 20px;
+    }
+
+    #wrap .right > img {
+        width: 100%;
+        
+        
+    }
+
+    #footer {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    
+}

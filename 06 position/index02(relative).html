@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            border: 1px solid #777;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        p {
+            height: 100px;
+        }
+
+        .item1 {
+            background-color: yellow;
+        }
+
+        .item2 {
+            background-color: blue;
+            position: relative; /* 상대 위치 기준으로 움직(내 위치에서 움직인다) */
+            left: 20px;
+            top: 20px;
+        }
+
+        .item3 {
+            background-color: green;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="box">
+        <div class="content">
+            <p class="item1">박스</p>
+            <p class="item2">포지션</p>
+            <p class="item3">박스</p>
+        </div>
+    </div>
+    
+</body>
+</html>

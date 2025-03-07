@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            border: 1px solid #777;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        p {
+            height: 100px;
+        }
+
+        .content {
+            position: relative; /* 부모에 relative 속성을 부여여 */
+        }
+
+        .item1 {
+            background-color: yellow;
+        }
+
+        .item2 {
+            background-color: blue;
+            position: absolute; /* 절대위치(부모영역기준) 기반으로 z축으로 올린다 */
+            /* 
+            absolute를 사용하면 부모의 relative 속성 기준으로 움직이게 된다. 만약 부모의 속성이 없다면 body 기준으로 움직인다.
+            1.부모 기준이 될태그에 relative 속성을 부여
+            2.left, right 중 1개, top, bottom 중 1개를 이용해 위치를 조정함함
+            */
+            left: 30px;
+            bottom: 30px;
+        }
+
+        .item3 {
+            background-color: green;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="box">
+        <div class="content">
+            <p class="item1">박스</p>
+            <p class="item2">포지션</p>
+            <p class="item3">박스</p>
+        </div>
+    </div>
+
+</body>
+</html>

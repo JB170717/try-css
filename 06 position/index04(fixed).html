@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {padding: 0; margin: 0; list-style: none;}
+
+        /* position을 쓰면 원래 크기가 되므로 크기를 조정해 주면 된다 */
+        #header {position: fixed; left: 0; top: 0; width: 100%; z-index: 5;}
+        .menu {text-align: center; background-color: black;}
+        .menu ul li {display: inline;}
+        .menu ul li a {display: inline-block; padding: 10px; color: white;}
+
+        .floating-btn {
+            background-color: yellow; width: 40px; height: 40px; text-align: center; line-height: 40px;
+            position: fixed; right: 10px; bottom: 10px;
+            z-index: 10; /* position이 겹치게 되면 z축의 우선순위를 지정할 때 사용 10이 최대치 */
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <aside class="floating-btn">
+        TOP
+    </aside>
+
+    <header id="header">
+        <nav class="menu">
+            <ul>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <!-- section의 내용이 header 밑으로 들어갔으므로 section의 margin-top을 header의 높이만큼 사용해서 본문의 내용을 아래로 밀어줘야 한다. -->
+    <section style="height: 1500px; margin-top: 41px;">
+        글을 써놨는데...
+    </section>
+
+</body>
+</html>

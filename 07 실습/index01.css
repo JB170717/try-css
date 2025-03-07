@@ -1,0 +1,24 @@
+* {padding: 0; margin: 0; list-style: none;}
+
+header {position: fixed; top:0; left:0; width: 100%; z-index: 10; background-color: white;}
+header > h1 {text-align: center; margin: 20px; overflow: hidden;}
+header > .social {position: absolute; top: 20px; left: 15px;}
+header > .social > li {width: 32px; height: 32px; background: url(img/social.png) no-repeat; float: left;}
+header > .loginmenu {position: absolute; top: 20px; right: 15px; overflow: hidden;}
+header > .loginmenu > li {float: left;}
+header > .loginmenu > li > a {font-size: 12px; padding-left: 30px; text-decoration: none; color: #555;}
+header > nav > .mainmenu {text-align: center; margin-top: 30px;}
+header > nav > .mainmenu > li {display: inline-block;}
+header > nav > .mainmenu > li > a {display: block; padding: 20px 30px; text-decoration: none; color: #555;}
+
+#main {margin-top: 170px; height: 500px; border-top: 3px solid red; background-image: url(img/main.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;}
+#main > div {text-align: center; color: white; line-height: 80px;}
+
+#list {text-align: center; margin-bottom: 100px;}
+#list > h2 {border-bottom: 3px dashed #ddd; font-size: 14px;padding: 10px 0;}
+#list > article {display: inline-block; padding: 40px;}
+#list > article> h3 {color: #ddd;}
+
+footer {border-top: 2px solid #ddd; line-height: 40px; padding: 0 20px; height: 40px; overflow: hidden;}
+footer > h2 {float: left; font-size: 14px;}
+footer > p {float: right; font-size: 14px;}

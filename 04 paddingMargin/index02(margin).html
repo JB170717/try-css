@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        p {
+            width: 600px;
+            height: 100px;
+            border: 1px solid #777;
+
+            /* margin: 10px; 전체 */
+            /* margin: 10px 20px; 상하, 좌우 */
+            /* margin: 10px 20px 30px; 상, 좌우, 아래 */
+            margin: 10px 20px 30px 40px; /* 위부터 시계방향 */
+            /* magin left, right, top, bottom으로 특정 부위만 값을 지정할 수도 있다 */
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+<p>
+    마진이란<br>
+    상자의 바깥 여백이다(주황색)<br>
+    마진은 겹친다.
+</p>
+<p>
+    마진이란<br>
+    상자의 바깥 여백이다(주황색)<br>
+    마진은 겹친다.
+    겹칠 경우 작은쪽의 마진은 무시하고 큰쪽의 마진만 남는다.
+</p>
+
+<div style="margin: 0 auto; width: 500px; border: 1px solid #777; text-align: center;">
+    마진 0 auto
+</div>
+
+</body>
+</html>

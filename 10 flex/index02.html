@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {background-color: aqua; padding: 10px;}
+        .box .item{background-color: palevioletred; width: 50px; /* height: 50px; */}
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            /* 
+                space-between : 양쪽 붙이고 균등분배
+                space-around : 균등분배배
+            */
+            justify-content: space-around;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h3>justify-content (주축정렬)</h3>
+    <div class="container box">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h3>aling-item (교차축 정렬 - 한줄에 대한)</h3>
+
+    <style>
+        .container2{
+            display: flex;
+            height: 100px;
+
+            /* stretch - 잡아당김 (기본값값) */
+            /* baseline - 아이템의 글자위치로 정렬시킴킴 */
+            align-items: baseline; 
+        }
+    </style>
+
+    <div class="container2 box">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <h3>aling-content (교차축 정렬 - 두줄이상일때)</h3>
+
+    <style>
+        .container3{
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap; /* 두줄 이상 */
+            align-content: space-around;
+        }
+    </style>
+
+    <div class="container3 box">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+    </div>
+
+</body>
+</html>

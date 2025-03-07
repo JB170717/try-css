@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .box {
+                border: 1px solid #777;
+                width: 80%;
+                margin: 0 auto;
+                overflow: hidden;
+        }
+
+
+        /* 1240px 이상에서 동작 */
+        @media(min-width: 1240px) {
+    
+            .box li {
+                float: left;
+                width: 16.6666%;
+            }
+        }
+
+        /* 767px이상 1239px 이하에서 동작 - 태블릿 사이즈 */
+        @media(max-width: 1239px) and (min-width: 767px) {
+           
+            .box li {
+                float: left;
+                width: 25%;
+            }
+        }
+
+        /* 766px 이하에서 동작 */
+        @media(max-width: 766px) {
+            
+            .box li {
+                float: left;
+                width: 50%;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h3>웹환경 박스 6개, 태블릿 환경에서는 박스 4개, 모바일 환경 박스 2개</h3>
+
+    <div class="box">
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+    </div>
+
+</body>
+</html>

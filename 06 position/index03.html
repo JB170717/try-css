@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .reply {
+            border:1px solid #777;
+            width: 500px; 
+            margin: 0 auto; 
+            position: relative;
+            padding: 10px;
+        }
+
+        .reply > img {
+            position: absolute;
+            left: 10px;
+            top: 10px;        
+        }
+
+        .reply > .content {
+            padding-left: 70px;
+        }
+
+        .content > textarea {
+            width: 100%;
+            box-sizing: border-box;
+            resize: vertical;
+            min-height: 80px;
+        
+        }
+
+        .control {
+            overflow: hidden;
+        }
+
+        .control > .input-area {
+            float: left;
+        }
+
+        .control > .input-area > input {
+            display: block;
+        }
+
+        .control > button {
+            float:right;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="reply">
+        <img src="img/b.jpg" alt="프로필" width="50" height="50">
+        <div class="content">
+            <textarea></textarea>
+            <div class="control">
+                <div class="input-area">
+                    <input type="text">
+                    <input type="text">
+                </div>
+                <button>등록</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

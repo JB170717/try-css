@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+    p {
+        width: 600px;
+        height: 100px;
+        border: 1px solid #777;
+
+        /* padding: 10px; 값을 1개만 넣으면 전체에 해당 값을 부여 */
+        /* padding: 10px 20px; 값을 2개 넣으면 상하,좌우에 해당 값을 부여 */
+        /* padding: 10px 20px 30px; 값을 3개 넣으면 상, 좌우, 하에 해당 값을 부여 */
+        padding: 10px 20px 30px 40px; /* 4개를 줄 경우 위부터 시계방향으로 각각의 값을 부여한다 */
+        /* padding left, right, top, bottom으로 특정 부위만 값을 지정할 수도 있다 */
+    }
+
+</style>
+
+</head>
+<body>
+    
+    <p>
+        패딩<br>
+        윤곽 기준 안쪽 여백이다<br>
+        패딩은 겹치지 않는다
+        패딩은 겹칠 경우 합산한다
+        박스크기는 (width + padding양쪽 + border양쪽)
+    </p>
+
+</body>
+</html>
